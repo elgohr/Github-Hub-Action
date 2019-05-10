@@ -1,4 +1,4 @@
-FROM ubuntu:16.04
+FROM ubuntu:16.10
 LABEL "com.github.actions.name"="Github Hub"
 LABEL "com.github.actions.description"="An easy way to interact with Github from Actions"
 LABEL "com.github.actions.icon"="git-branch"
