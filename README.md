@@ -10,7 +10,7 @@ workflow "Publish Release" {
 }
 
 action "create release" {
-  uses = "elgohr/Github-Hub-Action@1.0"
+  uses = "elgohr/Github-Hub-Action@master"
   args = "release create $(date +%Y%m%d%H%M%S)"
   secrets = ["GITHUB_TOKEN"]
 }
