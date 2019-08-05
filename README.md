@@ -18,4 +18,5 @@ action "create release" {
 
 ## Argument
 
-The actions you want to perform on Github
+The actions you want to perform on Github.
+All commands can be found at https://hub.github.com/hub.1.html
