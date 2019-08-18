@@ -2,8 +2,27 @@
 Interacting with Github in an action
 
 ## Usage
-An example workflow
+
+### New workflow
+```yaml
+name: Publish Release
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Create a Release
+      uses: elgohr/Publish-Docker-Github-Action@master
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        args: release create $(date +%Y%m%d%H%M%S)
+
 ```
+
+### Old workflow
+```hcl
 workflow "Publish Release" {
   on = "push"
   resolves = ["create release"]
