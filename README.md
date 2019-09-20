@@ -13,7 +13,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: Create a Release
-      uses: elgohr/Publish-Docker-Github-Action@master
+      uses: elgohr/Github-Hub-Action@master
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
