@@ -1,0 +1,16 @@
+name: 'Github Hub'
+author: 'Lars Gohr'
+branding:
+  icon: 'git-branch'
+  color: 'gray-dark'
+description: 'An easy way to interact with Github from Actions'
+inputs:
+  command:
+    description: 'The command to execute on GitHub'
+    required: true
+args: ['${{ inputs.command }}']
+env:
+  GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'

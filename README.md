@@ -21,20 +21,6 @@ jobs:
 
 ```
 
-### Old workflow
-```hcl
-workflow "Publish Release" {
-  on = "push"
-  resolves = ["create release"]
-}
-
-action "create release" {
-  uses = "elgohr/Github-Hub-Action@master"
-  args = "release create $(date +%Y%m%d%H%M%S)"
-  secrets = ["GITHUB_TOKEN"]
-}
-```
-
 ## Argument
 
 The actions you want to perform on Github.  
