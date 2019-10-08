@@ -1,4 +1,6 @@
 # Github-Hub-Action
+[![Actions Status](https://github.com/elgohr/Github-Hub-Action/workflows/Test/badge.svg)](https://github.com/elgohr/Github-Hub-Action/actions)
+
 Interacting with Github in an action
 
 ## Usage
